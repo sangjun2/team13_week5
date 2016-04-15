@@ -28,8 +28,8 @@ Jenkins: 1.654
  
 ### 3. Output
  
- **example 1**
+### 1) example1
 ![IMG0](./img/output.png)
- 
- **example 2**
+
+### 2) example2
 ![IMG1](./img/output1.png)
