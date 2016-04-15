@@ -27,5 +27,9 @@ Jenkins: 1.654
  test파일을 실행할 때 junit test로 실행한다.
  
 ### 3. Output
+ 
+ **example 1**
 ![IMG0](./img/output.png)
+ 
+ **example 2**
 ![IMG1](./img/output1.png)
