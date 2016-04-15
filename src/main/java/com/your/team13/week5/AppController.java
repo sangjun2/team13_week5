@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 public class AppController {
 	private static final Logger logger = Logger.getLogger("PrintBill");
 	private StringBuffer buf;
-	
+
 	Plan plan;
 	Customer customer;
 	Calculate calculate;
@@ -17,13 +17,13 @@ public class AppController {
 
 	public void run(String inputPlan, int callTime, int lineNumber) {
 		customer = new Customer();
-		
+
 		customer.setPlan(getPlan(inputPlan));
 		customer.setCallTime(callTime);
 		customer.setlineNumber(lineNumber);
-		
+
 		calculate = new Calculate(customer);
-		
+
 		this.printBill();
 	}
 
