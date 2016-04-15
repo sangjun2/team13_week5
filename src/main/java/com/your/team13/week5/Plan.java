@@ -5,7 +5,8 @@ public class Plan {
 	protected double basicMonthlyRate; // 기본 요금
 	protected int includedMinutes; // 기본 제공 시간
 	protected double ratePerExcessMinutes; // 초과 시간당 요금
-
+	protected String planName;
+	
 	public Plan() {
 		super();
 	}
@@ -14,32 +15,19 @@ public class Plan {
 		return basicMonthlyRate;
 	}
 
-//	public void setbasicMonthlyRate(double basicMonthlyRate) {
-//		this.basicMonthlyRate = basicMonthlyRate;
-//	}
-
 	public int getincludedMinutes() {
 		return includedMinutes;
 	}
-
-//	public void setincludedMinutes(int includedMinutes) {
-//		this.includedMinutes = includedMinutes;
-//	}
 
 	public double getratePerExcessMinutes() {
 		return ratePerExcessMinutes;
 	}
 
-//	public void setratePerExcessMinutes(double ratePerExcessMinutes) {
-//		this.ratePerExcessMinutes = ratePerExcessMinutes;
-//	}
-
 	public double getadditionalLineRate() {
-
 		return additionalLineRate;
 	}
-
-//	public void setadditionalLineRate(double additionalLineRate) {
-//		this.additionalLineRate = additionalLineRate;
-//	}
+	
+	public String getPlanName() {
+		return planName;
+	}
 }

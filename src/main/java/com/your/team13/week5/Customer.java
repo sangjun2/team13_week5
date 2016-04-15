@@ -12,12 +12,6 @@ public class Customer {
 		this.lineNumber = 0; 
 	}
 	
-	public Customer(Plan plan, int callTime, int lineNumber) {
-		this.plan = plan;
-		this.callTime = callTime;
-		this.lineNumber = lineNumber;
-	}
-	
 	public Plan getPlan() {
 		return plan;
 	}

@@ -9,6 +9,6 @@ public class Main {
 		
 		AppController app = new AppController();
 		
-		app.run("Gold", 1200, 4);
+		app.run("Silver", 400, 3);
 	}
 }
