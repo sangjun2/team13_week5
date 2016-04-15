@@ -7,5 +7,6 @@ public class Gold extends Plan{
 		this.additionalLineRate = 14.50;
 		this.ratePerExcessMinutes = 0.45;
 		this.includedMinutes = 1000;
+		this.planName = "Gold";
 	}
 }
