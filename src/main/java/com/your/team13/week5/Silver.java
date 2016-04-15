@@ -6,5 +6,6 @@ public class Silver extends Plan{
 		this.additionalLineRate = 21.50;
 		this.ratePerExcessMinutes = 0.54;
 		this.includedMinutes = 500;
+		this.planName = "Silver";
 	}
 }

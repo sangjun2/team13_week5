@@ -24,7 +24,7 @@ public class AppController {
 
 		calculate = new Calculate(customer);
 
-		this.printBill();
+		logger.log(Level.INFO, this.printBill());
 	}
 
 	public Plan getPlan(String inputPlan) {
@@ -37,10 +37,15 @@ public class AppController {
 		return this.plan;
 	}
 
-	public void printBill() {
-		buf = new StringBuffer("=================================");
-		buf.append("<Phone Bill>");
-		buf.append("Plan : ");
-		System.out.printf("금액 : %.2f\n", calculate.totalRate());
+	public String printBill() {
+		buf = new StringBuffer("\n===============================\n");
+		buf.append("\t\t<Phone Bill>\n\n");
+		buf.append("Plan : " + customer.getPlan().getPlanName() + "\n");
+		buf.append("Minutes Used : " + customer.getCallTime() + "\n");
+		buf.append("Number of Lines : " + customer.getlineNumber() + "\n\n");
+		buf.append("Total Rate : " + calculate.totalRate() + "\n");
+		buf.append("===============================");
+		
+		return buf + "";
 	}
 }
